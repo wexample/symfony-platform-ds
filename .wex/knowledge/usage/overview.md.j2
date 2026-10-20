@@ -10,7 +10,7 @@ wexample_symfony_platform_ds:
     recipient: '%env(default::CONTACT_RECIPIENT)%'
 ```
 
-Linked with `target: modal` — `button_target(icon, label, path('contact_index'), 'modal')` —, it opens over the page being read and says it is sent in place of the form, in the modal (its processor `answersWithPage()`). The form carries symfony-forms' `ProofOfWorkInputType`, the captcha nobody solves by hand. The mail leaves at once through symfony-mail's `MailSenderService`, without Messenger, so the visitor learns there and then whether it left; its texts are `assets/mails/contact.trans.yml`.
+Linked with `target: modal` — `button_target(icon, label, path('contact_index'), 'modal')` —, it opens over the page being read and says it is sent in place of the form, in the modal (its processor `answersWithPage()`). The form carries symfony-forms' `ProofOfWorkInputType`, the captcha nobody solves by hand. The mail leaves at once through symfony-mail's `MailSenderService`, without Messenger, its body kept in symfony-mail's journal (`keepBody`): a transport refusing it loses nothing, the visitor is told it is sent, and the administrator reads it among the mails sent (symfony-mail-ds). Its texts are `assets/mails/contact.trans.yml`.
 
 The application still limits how often an address may send it: a `rate_limits` rule of symfony-security on the route.
 

@@ -7,6 +7,7 @@ use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Symfony\Component\Mime\Address;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Wexample\SymfonyForms\Service\FormProcessor\AbstractFormProcessor;
@@ -19,8 +20,9 @@ use Wexample\SymfonyPlatformDs\Form\ContactForm;
  * own as the one to reply to. Answered by its page, which says it is sent —
  * in the modal it was opened in.
  *
- * Sent at once, through the transport: the visitor learns there and then
- * whether it left.
+ * The mail journal of symfony-mail keeps it, body included, before it
+ * leaves: a transport refusing it loses nothing, and the visitor is told it
+ * is sent all the same — it reached the application.
  */
 class ContactFormProcessor extends AbstractFormProcessor
 {
@@ -55,17 +57,22 @@ class ContactFormProcessor extends AbstractFormProcessor
         // to a submission sent there anyway.
         $recipient = $this->contactRecipient ?? throw new NotFoundHttpException();
 
-        $this->mailSender->send(
-            (new TemplatedEmail())
-                ->to($recipient)
-                ->replyTo(new Address($email, $name))
-                ->htmlTemplate(self::MAIL_TEMPLATE)
-                // `email` is the mail itself, in a template.
-                ->context([
-                    'sender_name' => $name,
-                    'sender_email' => $email,
-                    'message' => $form->get(ContactForm::FIELD_MESSAGE)->getData(),
-                ])
-        );
+        try {
+            $this->mailSender->send(
+                (new TemplatedEmail())
+                    ->to($recipient)
+                    ->replyTo(new Address($email, $name))
+                    ->htmlTemplate(self::MAIL_TEMPLATE)
+                    // `email` is the mail itself, in a template.
+                    ->context([
+                        'sender_name' => $name,
+                        'sender_email' => $email,
+                        'message' => $form->get(ContactForm::FIELD_MESSAGE)->getData(),
+                    ]),
+                keepBody: true
+            );
+        } catch (TransportExceptionInterface) {
+            // Kept in the journal as failed, to be read there.
+        }
     }
 }
