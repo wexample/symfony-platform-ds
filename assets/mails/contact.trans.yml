@@ -7,3 +7,108 @@ fr:
   subject: Nouveau message du formulaire de contact
   title: Nouveau message
   from: "De %name% (%email%) :"
+
+zh:
+  subject: 来自联系表单的新消息
+  title: 新消息
+  from: '来自 %name% (%email%):'
+
+ar:
+  subject: 'رسالة جديدة من نموذج الاتصال'
+  title: 'رسالة جديدة'
+  from: 'من %name% (%email%):'
+
+hi:
+  subject: 'संपर्क फॉर्म से नया संदेश'
+  title: 'नया संदेश'
+  from: 'से %name% (%email%):'
+
+he:
+  subject: 'הודעה חדשה מטופס הקשר'
+  title: 'הודעה חדשה'
+  from: 'מ-%name% (%email%):'
+
+fa:
+  subject: 'پیام جدید از فرم تماس'
+  title: 'پیام جدید'
+  from: 'از %name% (%email%):'
+
+ur:
+  subject: 'رابطہ فارم سے نیا پیغام'
+  title: 'نیا پیغام'
+  from: 'سے %name% (%email%):'
+
+ja:
+  subject: お問い合わせフォームからの新しいメッセージ
+  title: 新しいメッセージ
+  from: '%name% からのメッセージ (%email%):'
+
+ko:
+  subject: '연락처 양식에서 새 메시지'
+  title: '새 메시지'
+  from: '보낸 사람 %name% (%email%):'
+
+bn:
+  subject: 'যোগাযোগ ফর্ম থেকে নতুন বার্তা'
+  title: 'নতুন বার্তা'
+  from: '%name% থেকে (%email%):'
+
+th:
+  subject: ข้อความใหม่จากแบบฟอร์มติดต่อ
+  title: ข้อความใหม่
+  from: 'จาก %name% (%email%):'
+
+de:
+  subject: 'Neue Nachricht vom Kontaktformular'
+  title: 'Neue Nachricht'
+  from: 'Von %name% (%email%):'
+
+fi:
+  subject: 'Uusi viesti yhteydenottolomakkeelta'
+  title: 'Uusi viesti'
+  from: 'Lähettäjä %name% (%email%):'
+
+ru:
+  subject: 'Новое сообщение из формы обратной связи'
+  title: 'Новое сообщение'
+  from: 'От %name% (%email%):'
+
+pl:
+  subject: 'Nowa wiadomość z formularza kontaktowego'
+  title: 'Nowa wiadomość'
+  from: 'Od %name% (%email%):'
+
+es:
+  subject: 'Nuevo mensaje del formulario de contacto'
+  title: 'Nuevo mensaje'
+  from: 'De %name% (%email%):'
+
+it:
+  subject: 'Nuovo messaggio dal modulo di contatto'
+  title: 'Nuovo messaggio'
+  from: 'Da %name% (%email%):'
+
+pt_BR:
+  subject: 'Nova mensagem do formulário de contato'
+  title: 'Nova mensagem'
+  from: 'De %name% (%email%):'
+
+tr:
+  subject: 'İletişim formundan yeni mesaj'
+  title: 'Yeni mesaj'
+  from: '%name% tarafından (%email%):'
+
+vi:
+  subject: 'Tin nhắn mới từ mẫu liên hệ'
+  title: 'Tin nhắn mới'
+  from: 'Từ %name% (%email%):'
+
+id:
+  subject: 'Pesan baru dari formulir kontak'
+  title: 'Pesan baru'
+  from: 'Dari %name% (%email%):'
+
+nl:
+  subject: 'Nieuw bericht van het contactformulier'
+  title: 'Nieuw bericht'
+  from: 'Van %name% (%email%):'

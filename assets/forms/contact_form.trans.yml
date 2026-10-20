@@ -19,3 +19,234 @@ fr:
       label: Votre message
   action:
     submit: Envoyer
+
+zh:
+  field:
+    name:
+      label: 您的姓名
+    email:
+      label: 您的电子邮件地址
+    message:
+      label: 您的留言
+  action:
+    submit: 发送
+
+ar:
+  field:
+    name:
+      label: اسمك
+    email:
+      label: 'عنوان بريدك الإلكتروني'
+    message:
+      label: رسالتك
+  action:
+    submit: إرسال
+
+hi:
+  field:
+    name:
+      label: 'आपका नाम'
+    email:
+      label: 'आपका ई-मेल पता'
+    message:
+      label: 'आपका संदेश'
+  action:
+    submit: भेजें
+
+he:
+  field:
+    name:
+      label: שמך
+    email:
+      label: 'כתובת האימייל שלך'
+    message:
+      label: 'הודעה שלך'
+  action:
+    submit: שלח
+
+fa:
+  field:
+    name:
+      label: 'نام شما'
+    email:
+      label: 'آدرس ایمیل شما'
+    message:
+      label: 'پیام شما'
+  action:
+    submit: ارسال
+
+ur:
+  field:
+    name:
+      label: 'آپ کا نام'
+    email:
+      label: 'آپ کا ای میل پتہ'
+    message:
+      label: 'آپ کا پیغام'
+  action:
+    submit: بھیجیں
+
+ja:
+  field:
+    name:
+      label: あなたの名前
+    email:
+      label: あなたのメールアドレス
+    message:
+      label: あなたのメッセージ
+  action:
+    submit: 送信
+
+ko:
+  field:
+    name:
+      label: '당신의 이름'
+    email:
+      label: '당신의 이메일 주소'
+    message:
+      label: '당신의 메시지'
+  action:
+    submit: 보내기
+
+bn:
+  field:
+    name:
+      label: 'আপনার নাম'
+    email:
+      label: 'আপনার ই-মেইল ঠিকানা'
+    message:
+      label: 'আপনার বার্তা'
+  action:
+    submit: পাঠান
+
+th:
+  field:
+    name:
+      label: ชื่อของคุณ
+    email:
+      label: ที่อยู่อีเมลของคุณ
+    message:
+      label: ข้อความของคุณ
+  action:
+    submit: ส่ง
+
+de:
+  field:
+    name:
+      label: 'Ihr Name'
+    email:
+      label: 'Ihre E-Mail-Adresse'
+    message:
+      label: 'Ihre Nachricht'
+  action:
+    submit: Senden
+
+fi:
+  field:
+    name:
+      label: Nimesi
+    email:
+      label: Sähköpostiosoitteesi
+    message:
+      label: Viestisi
+  action:
+    submit: Lähetä
+
+ru:
+  field:
+    name:
+      label: 'Ваше имя'
+    email:
+      label: 'Ваш адрес электронной почты'
+    message:
+      label: 'Ваше сообщение'
+  action:
+    submit: Отправить
+
+pl:
+  field:
+    name:
+      label: 'Twoje imię'
+    email:
+      label: 'Twój adres e-mail'
+    message:
+      label: 'Twoja wiadomość'
+  action:
+    submit: Wyślij
+
+es:
+  field:
+    name:
+      label: 'Tu nombre'
+    email:
+      label: 'Tu dirección de correo electrónico'
+    message:
+      label: 'Tu mensaje'
+  action:
+    submit: Enviar
+
+it:
+  field:
+    name:
+      label: 'Il tuo nome'
+    email:
+      label: 'Il tuo indirizzo e-mail'
+    message:
+      label: 'Il tuo messaggio'
+  action:
+    submit: Invia
+
+pt_BR:
+  field:
+    name:
+      label: 'Seu nome'
+    email:
+      label: 'Seu endereço de e-mail'
+    message:
+      label: 'Sua mensagem'
+  action:
+    submit: Enviar
+
+tr:
+  field:
+    name:
+      label: Adınız
+    email:
+      label: 'E-posta adresiniz'
+    message:
+      label: Mesajınız
+  action:
+    submit: Gönder
+
+vi:
+  field:
+    name:
+      label: 'Tên của bạn'
+    email:
+      label: 'Địa chỉ email của bạn'
+    message:
+      label: 'Tin nhắn của bạn'
+  action:
+    submit: Gửi
+
+id:
+  field:
+    name:
+      label: 'Nama Anda'
+    email:
+      label: 'Alamat e-mail Anda'
+    message:
+      label: 'Pesan Anda'
+  action:
+    submit: Kirim
+
+nl:
+  field:
+    name:
+      label: 'Uw naam'
+    email:
+      label: 'Uw e-mailadres'
+    message:
+      label: 'Uw bericht'
+  action:
+    submit: Verzenden
