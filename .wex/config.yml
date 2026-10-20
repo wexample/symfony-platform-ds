@@ -1,0 +1,8 @@
+domain: symfony-platform-ds.wex
+global:
+  name: symfony-platform-ds
+  type: php-package
+  version: 1.0.0
+wex:
+  migration: 2
+  version: 6.0.150
