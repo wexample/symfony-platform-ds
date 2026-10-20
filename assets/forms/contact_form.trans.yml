@@ -1,0 +1,21 @@
+en:
+  field:
+    name:
+      label: Your name
+    email:
+      label: Your e-mail address
+    message:
+      label: Your message
+  action:
+    submit: Send
+
+fr:
+  field:
+    name:
+      label: Votre nom
+    email:
+      label: Votre adresse e-mail
+    message:
+      label: Votre message
+  action:
+    submit: Envoyer

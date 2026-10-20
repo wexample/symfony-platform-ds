@@ -1,0 +1,9 @@
+en:
+  subject: New message from the contact form
+  title: New message
+  from: "From %name% (%email%):"
+
+fr:
+  subject: Nouveau message du formulaire de contact
+  title: Nouveau message
+  from: "De %name% (%email%) :"

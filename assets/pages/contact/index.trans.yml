@@ -1,0 +1,15 @@
+en:
+  page_title: Contact
+  page_icon: ph:bold/envelope-simple
+  intro: A question, a project, a remark? Write here, the answer comes by mail.
+  sent:
+    title: Message sent
+    body: Thank you. The answer will come to the address you gave.
+
+fr:
+  page_title: Contact
+  page_icon: ph:bold/envelope-simple
+  intro: Une question, un projet, une remarque ? Écrivez ici, la réponse arrive par mail.
+  sent:
+    title: Message envoyé
+    body: Merci. La réponse arrivera à l'adresse que vous avez donnée.

@@ -1,11 +1,42 @@
 {
   "name": "wexample/symfony-platform-ds",
+  "description": "Design-system screens of symfony-platform: what every application of the kind shows its visitors, starting with a contact form",
   "version": "1.0.1",
   "type": "library",
   "license": "MIT",
   "autoload": {
     "psr-4": {
       "Wexample\\SymfonyPlatformDs\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "weeger",
+      "email": "romain.weeger@wexample.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.5",
+    "symfony/validator": "^7.4 || ^8.0",
+    "wexample/symfony-design-system": ">=37.0.0",
+    "wexample/symfony-forms": ">=13.0.0",
+    "wexample/symfony-helpers": ">=17.0.0",
+    "wexample/symfony-loader": ">=23.2.0",
+    "wexample/symfony-mail": ">=2.0.12",
+    "wexample/symfony-security": ">=3.0.0"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../*",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
+  "extra": {
+    "install": {
+      "bundle_env": "all"
     }
   }
 }

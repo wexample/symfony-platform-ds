@@ -1,0 +1,14 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+        bind:
+            $contactRecipient: '%wexample_symfony_platform_ds.contact.recipient%'
+
+    Wexample\SymfonyPlatformDs\Controller\:
+        resource: '../../Controller/'
+        tags: ['controller.service_arguments']
+
+    Wexample\SymfonyPlatformDs\:
+        resource: '../../{Form,Service}'

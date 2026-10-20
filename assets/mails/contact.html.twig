@@ -1,0 +1,3 @@
+<h1>{{ '@mail::title' | trans }}</h1>
+<p>{{ '@mail::from' | trans({ '%name%': sender_name, '%email%': sender_email }) }}</p>
+<p>{{ message | nl2br }}</p>

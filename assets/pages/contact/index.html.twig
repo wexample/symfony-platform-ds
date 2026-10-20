@@ -1,0 +1,19 @@
+{%- extends '@front/layouts/private/layout.html.twig' -%}
+
+{%- set page_show_title = true -%}
+
+{#- Opened in a modal, the page answering the submission comes back in it
+    (`data-page-navigation="contained"`): sent, it says so in place of the
+    form. -#}
+{%- block page_body -%}
+    <section class="block block--card" data-page-navigation="contained">
+        <div class="block--body">
+            {%- if sent -%}
+                {{ message_success('@page::sent.title', '@page::sent.body') }}
+            {%- else -%}
+                <p class="text-secondary">{{ '@page::intro' | trans }}</p>
+                {{ form_load(render_pass, contact_form, '@WexampleSymfonyPlatformDsBundle/forms/contact_form.html.twig') }}
+            {%- endif -%}
+        </div>
+    </section>
+{%- endblock -%}

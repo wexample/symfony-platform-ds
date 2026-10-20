@@ -1,0 +1,9 @@
+{%- extends '@WexampleSymfonyLoaderBundle/bases/form.html.twig' -%}
+
+{% block form_body %}
+    {{ form_row(form.name) }}
+    {{ form_row(form.email) }}
+    {{ form_row(form.message) }}
+    {{ form_row(form.captcha) }}
+    {{ form_actions(form) }}
+{% endblock %}
