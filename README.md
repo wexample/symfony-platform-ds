@@ -1,6 +1,6 @@
 # symfony-platform-ds
 
-Version: 2.0.1
+Version: 2.0.2
 
 `wexample/symfony-platform-ds` holds the screens every application built on symfony-platform shows its visitors. For now, a contact form.
 
@@ -47,7 +47,7 @@ The suite includes packages for configuration management, file handling, prompts
 - wexample/symfony-design-system: >=39.0.0
 - wexample/symfony-forms: >=14.0.0
 - wexample/symfony-helpers: >=18.0.0
-- wexample/symfony-loader: >=24.0.0
+- wexample/symfony-loader: >=25.0.0
 - wexample/symfony-mail: >=3.0.0
 - wexample/symfony-security: >=4.0.0
 
