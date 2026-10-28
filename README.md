@@ -1,6 +1,6 @@
 # symfony-platform-ds
 
-Version: 2.0.6
+Version: 2.0.7
 
 Design-system screens of symfony-platform: what every application of the kind shows its visitors, starting with a contact form
 
