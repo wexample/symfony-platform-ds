@@ -1,0 +1,19 @@
+{#- A form in a card, its buttons at the card's foot: the page of a form, as a
+    management application shows one to create or edit. Given the form view
+    (`form`) and the template drawing its fields (`template`); `body_class`
+    adds to the body's classes. Embedded rather than included, its blocks
+    change a part of it: what precedes the form (`form_card_intro`), the
+    whole body (`form_card_body`), the foot (`form_card_footer`). -#}
+<section class="block block--card">
+    {%- block form_card_body -%}
+        <div class="block--body{{ body_class is defined ? ' ' ~ body_class }}">
+            {%- block form_card_intro -%}{%- endblock -%}
+            {{ form_load(render_pass, form, template, { actions: false }) }}
+        </div>
+    {%- endblock -%}
+    {%- block form_card_footer -%}
+        <div class="block--footer block--footer--end">
+            {{ form_actions(form, { outside: true }) }}
+        </div>
+    {%- endblock -%}
+</section>
